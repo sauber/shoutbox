@@ -1,0 +1,10 @@
+<% USE date %>
+<ul>
+<% FOREACH record IN records %>
+ <li>
+   <span class="date"><% date.format(record.time, '%Y-%m-%d %H:%M') %></span>
+   <span class="name"><% record.name %></span>
+   <span class="message"><% record.message %></span>
+  </li>
+<% END %>
+</ul>
